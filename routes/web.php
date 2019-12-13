@@ -25,6 +25,7 @@
 Route::get('/',array('as'=>'home', 'uses'=>'PagesController@getHome'));
 Route::get('/about',array('as'=>'messages', 'uses'=>'PagesController@getAbout'));
 Route::get('/contact',array('as'=>'messages', 'uses'=>'PagesController@getContact'));
+Route::post('/contact/submit',array('as'=>'messages/submit', 'uses'=>'MessagesController@submit'));
 
 Route::get('/messages',array('as'=>'messages', 'uses'=>'MessagesController@getMEssages'));
 
